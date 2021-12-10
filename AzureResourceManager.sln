@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureResourceManager.Core", "AzureResourceManager.Core\AzureResourceManager.Core.csproj", "{B39D9A66-E5AE-4AE1-B0FA-73BBA3359581}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureResourceManager.UnitTest", "AzureResourceManager.UnitTest\AzureResourceManager.UnitTest.csproj", "{6381ECA0-06F7-4AB1-9142-9A02D0FB0F67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B39D9A66-E5AE-4AE1-B0FA-73BBA3359581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B39D9A66-E5AE-4AE1-B0FA-73BBA3359581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B39D9A66-E5AE-4AE1-B0FA-73BBA3359581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B39D9A66-E5AE-4AE1-B0FA-73BBA3359581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6381ECA0-06F7-4AB1-9142-9A02D0FB0F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6381ECA0-06F7-4AB1-9142-9A02D0FB0F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6381ECA0-06F7-4AB1-9142-9A02D0FB0F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6381ECA0-06F7-4AB1-9142-9A02D0FB0F67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F655199-4813-4EC3-BD0B-95254CC8A14A}
+	EndGlobalSection
+EndGlobal
