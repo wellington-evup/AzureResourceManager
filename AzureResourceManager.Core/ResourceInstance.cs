@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AzureResourceManager.Core.Exceptions;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace AzureResourceManager.Core
@@ -15,7 +16,9 @@ namespace AzureResourceManager.Core
 
         public Customer Customer { get; set; }
 
-        public User Owner { get; private set; }
+        public Release Release { get; set; }
+
+        public string Name { get { return string.Format("{0} {1} {2}", Resource.Name, Environment?.Name, Customer?.Name); } }
 
         public ResourceInstance()
         {
@@ -43,9 +46,18 @@ namespace AzureResourceManager.Core
             Customer = customer;
         }
 
-        public void SetOwner(User owner)
+        public override string ToString()
         {
-            Owner = owner;
+            return base.ToString();
+        }
+
+        public void SetRelease(Release release)
+        {
+            if (Release != null && release != null)
+            {
+                throw new BusyResourceInstanceException($"Resource instance '{Name}' is busy. Send a message for {Release.Owner.Name} to set it free.");
+            }
+            Release = release;
         }
     }
 }
